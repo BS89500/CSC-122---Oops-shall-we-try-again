@@ -2,4 +2,4 @@
 
 #include <string>
 
-std::string oops();
+int oops(int lower, int upper, std::string inputMessage, std::string error);
