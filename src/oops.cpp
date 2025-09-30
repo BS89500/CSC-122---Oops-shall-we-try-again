@@ -1,5 +1,18 @@
 #include <string>
+#include <iostream>
 
-std::string oops() {
-   return "You can delete this function and put your code in this file!";
+using namespace std;
+int oops(int lower, int upper, string inputMessage, string error) {
+   int input;
+
+   while (true) {
+      cout << inputMessage;
+      cin >> input;
+      if (lower <= input  && input <= upper) {
+         cout << "The value chosen by the user is " << to_string(input) <<  endl;
+         return input;
+      }
+      cout << error << endl;
+   }
+
 }
